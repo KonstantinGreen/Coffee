@@ -1,0 +1,25 @@
+.footer{
+  padding: 30px 0;
+  border-top: 1px solid $gray-bold;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max-w($sm) {
+      flex-direction: column;
+     }
+  }
+  &__copy{
+    font-size: 16px;
+    @include max-w($sm) {
+      margin-bottom: 20px;
+     }
+     @include max-w($xs) {
+      font-size: 12px;
+     }
+  }
+  &__copy-span{
+    color: $black;
+    font-weight: 700;
+  }
+}

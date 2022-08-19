@@ -1,0 +1,94 @@
+.head{
+  padding: 70px 0 74px;
+  background-color: $gray-light;
+  margin-bottom: 40px;
+  @include max-w($sm) {
+   padding: 30px 0 30px;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    justify-content: space-between;
+    @include max-w($md) {
+      padding-left: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__text{
+    max-width: 354px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    @include max-w($md) {
+     max-width: 100%;
+     margin-right: 0;
+     order: 2;
+    }
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 60px;
+    color: $black;
+    margin-bottom: 19px;
+    @include truncate(3, 1.2);
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url(../images/coffee.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 89px;
+      background-position: 8px -10px;
+      height: 86px;
+      @include max-w($sm) {
+        width: 66px;
+        background-position: 4px -10px;
+        height: 63px
+      }
+      @include max-w($xs) {
+        width: 46px;
+        height: 43px;
+       }
+    }
+    @include max-w($md) {
+      max-width: 354px;
+    }
+    @include max-w($sm) {
+      font-size: 40px;
+    }
+    @include max-w($xs) {
+      font-size: 32px;
+     }
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 30px;
+    color: $black-700;
+    @include max-w($xs) {
+      font-size: 22px;
+     }
+  }
+  &__coffee{
+    display: inline-block;
+    background-image: url(../images/coffee.png);
+    width: 70px;
+    height: 67px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__img-box{
+    @include max-w($md) {
+      max-width: 650px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    @include max-w($sm) {
+      max-width: 550px;
+    }
+  }
+  &__img{
+    width: 100%;
+  }
+}

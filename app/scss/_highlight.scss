@@ -1,0 +1,82 @@
+.highlight{
+  margin-bottom: 43px;
+  @include max-w($xs) {
+    margin-bottom: 30px;
+   }
+  &__inner{
+    display: flex;
+    margin-bottom: 31px;
+    @include max-w($sm) {
+      flex-direction: column;
+     }
+  }
+  &__box{
+    max-width: 440px;
+    width: 100%;
+    padding: 98px 65px 118px 63px;
+    background-color: $gray;
+    @include max-w($sm) {
+      max-width: 100%;
+      order: 2;
+      padding: 40px;
+     }
+  }
+  &__img{
+    height: 100%;
+    width: 100%;
+    @include max-w($sm) {
+      height: 350px;
+     }
+  }
+  &__title{
+    font-size: 40px;
+    color: $black;
+    margin-bottom: 24px;
+    @include max-w($sm) {
+      font-size: 32px;
+     }
+     @include max-w($xs) {
+      font-size: 26px;
+     }
+  }
+  &__text{
+    font-size: 16px;
+    margin-bottom: 31px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  &__link{
+    font-weight: 700;
+    color: $black;
+    transition: color 0.5s;
+    &:hover{
+      color: $orange;
+    }
+  }
+  &__btn{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: $purple;
+    color: $white;
+    border-radius: 5px;
+    padding: 9px 37px 9px 11px;
+    position: relative;
+    margin-left: auto;
+    transition: background-color 0.5s;
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url(../images/icons/arrow-down.svg);
+      width: 20px;
+      height: 20px;
+      right: 10px;
+    }
+    &:hover{
+      background-color: $orange;
+    }
+  }
+}
