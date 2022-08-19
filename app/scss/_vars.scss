@@ -14,12 +14,3 @@ $gray-light: #fbfbfb;
 $gray-bold:#e8e8e8;
 $gray: #f7fafc;
 $orange: #ff4b33;
-
-
-%checkbox-hidden {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  position: absolute;
-}
